@@ -49,9 +49,37 @@ function likeCount() {
 
 //5. Add an event to the plus icon that will increment the price of the Air Jordan V shoe each time the icon is clicked on.
 
+increase.addEventListener('click',replaceDiv);
+var add = document.getElementById('increase');
+add.style.display = 'inline-block';
+
+var newInnerHTML = document.createElement('div');
+newInnerHTML.innerHTML = 58000
+newInnerHTML.style.display = 'inline-block';
+
+function replaceDiv(){
+    price4.innerHTML = null;
+    price4.appendChild(newInnerHTML);
+    price4.appendChild(add);
+}
+increase.addEventListener('click', function(){newInnerHTML.innerHTML++});
 
 //6. Add an event to the minus icon that will decrement the price of the Air Jordan V shoe each time the icon is clicked on.
 
+decrease.addEventListener('click',replaceDiv2);
+var subtract = document.getElementById('decrease');
+subtract.style.display = 'inline-block';
+
+var newInnerHTML2 = document.createElement('div');
+newInnerHTML2.innerHTML = 2500;
+newInnerHTML2.style.display = 'inline-block';
+
+function replaceDiv2(){
+    price5.innerHTML = null;
+    price5.appendChild(newInnerHTML2);
+    price5.appendChild(subtract);
+}
+decrease.addEventListener('click', function(){newInnerHTML2.innerHTML--});
 
 //7. Add an event to the Air Jordan XI shoe that will show another colorway for that shoe after hovering over the image. 
 
