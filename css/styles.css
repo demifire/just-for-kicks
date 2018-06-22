@@ -110,3 +110,7 @@ body{
 #price8:before{
   content: '฿'
 }
+
+#details:hover {
+  cursor: pointer;
+}
