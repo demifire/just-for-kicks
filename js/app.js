@@ -83,6 +83,20 @@ decrease.addEventListener('click', function(){newInnerHTML2.innerHTML--});
 
 //7. Add an event to the Air Jordan XI shoe that will show another colorway for that shoe after hovering over the image. 
 
+var diffColor = "https://static1.squarespace.com/static/557a4354e4b07b424bdb3f9f/557a5a4ce4b0965574c5c3e2/5751ab61f8baf3bb00c57f4d/1464970082182/jordan+11+concords+bakeryhny.com++.jpg?format=750w";
+var sameColor = 'https://www.sneakerlegends.com/images/stories/virtuemart/product/378037623%20378037623%20378037623%20378037623.jpg';
+var jordan11= document.getElementsByClassName('block3')[1].getElementsByTagName('img')[0];
+jordan11.id = 'kicks';
+jordan11.addEventListener('mouseover',changeKicks)
+
+function changeKicks(){
+    document.getElementById("kicks").src=diffColor;
+    jordan11.addEventListener('mouseout', restoreKicks)
+}
+
+function restoreKicks(){
+    document.getElementById("kicks").src=sameColor;
+}
 
 //8. Add an event to the Air Jordan XII shoe that will increase the image by 50% after clicking on the image.
 
