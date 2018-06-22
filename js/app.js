@@ -11,11 +11,19 @@ name1.addEventListener('mouseout',function(){descrip1.style.display = 'none'});
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
 
+Jordan3 = document.createElement('Jordan3');
+Jordan3.innerHTML = "The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.";
+Jordan3.style.display = 'none';
+name2.appendChild(Jordan3);
+name2.addEventListener('click',function(){
+    if(Jordan3.style.display === 'none'){
+        Jordan3.style.display = 'block'
+    }else{
+        Jordan3.style.display = 'none'}});
 
 //You'll need to:
 // create a div element with an id of 'descrip2'
 //append this element to the div element with the id of 'name2' 
-
 
 //4. Add events to the all the thumbs up icon that will add a count for each time the icon is clicked on for any shoe.
 
