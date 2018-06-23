@@ -41,11 +41,12 @@ body{
   }
 
   #slogan{
-    font-family: 'Fontdiner Swanky', cursive;
-    color: orangered;
+    font-family: cursive;
+    color: royalblue;
     font-size: 70px;
     text-align: center;
     margin-top: 50px;
+    text-decoration: underline;
   }
 
   #descrip1, #descrip2{

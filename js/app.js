@@ -100,6 +100,22 @@ function restoreKicks(){
 
 //8. Add an event to the Air Jordan XII shoe that will increase the image by 50% after clicking on the image.
 
+var jordan12= document.getElementsByClassName('block1')[2].getElementsByTagName('img')[0];
+jordan12.id = 'bigger';
+jordan12.addEventListener('click',toggleBig);
+
+function toggleBig(){
+    if(bigger.style.width==='105%'){
+        bigger.style.width=null;
+        bigger.style.height=null; 
+    }else{
+        bigger.style.width='105%';
+        bigger.style.height='105%';  
+    }
+}
+
 //9. Add events to both the plus and minus icon that will add or decrease the price each time the respective icon is clicked on.
+
+
 
 //10. Add an event to the Air Jordan XXVIII shoe that will show the famous 'crying Michael Jordan' meme after clicking on the image.
