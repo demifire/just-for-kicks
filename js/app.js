@@ -138,3 +138,51 @@ oneUp.addEventListener('click', function(){newInnerHTML3.innerHTML++});
 oneDown.addEventListener('click', function(){newInnerHTML3.innerHTML--});
 
 //10. Add an event to the Air Jordan XXVIII shoe that will show the famous 'crying Michael Jordan' meme after clicking on the image.
+
+var cryingJordan = 'https://media.giphy.com/media/O5NyCibf93upy/giphy.gif';
+var jordan28= document.getElementsByClassName('block3')[2].getElementsByTagName('img')[0];
+jordan28.id = 'cry';
+jordan28.addEventListener('click',changeKicks)
+
+function changeKicks(){
+        document.getElementById("cry").src=cryingJordan;
+        jordan28.addEventListener('click',function(){var randomGif = gifArr[Math.floor(Math.random()*gifArr.length)];
+            changeGif(randomGif);})
+}
+
+var gifArr = ['https://media.giphy.com/media/3XhU5pkFZChvW/giphy.gif',
+'https://media.giphy.com/media/lYf4uAJEWVo1FffnVD/giphy.gif',
+'https://media.giphy.com/media/RLWwOuPbqObupogOLB/giphy.gif',
+'https://media.giphy.com/media/4NeWu795Y4zP5Jzunf/giphy.gif',
+'https://media.giphy.com/media/QqkVKdsehPtCw/giphy.gif',
+'https://media.giphy.com/media/3oEjHYibHwRL7mrNyo/giphy.gif',
+'https://media.giphy.com/media/5wWf7GW1AzV6pF3MaVW/giphy.gif',
+'https://media.giphy.com/media/Is1O1TWV0LEJi/giphy.gif',
+'https://media.giphy.com/media/dEdmW17JnZhiU/giphy.gif',
+'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
+'https://media.giphy.com/media/8VrtCswiLDNnO/giphy.gif',
+'https://media.giphy.com/media/XfYyQFiq9ySc0/giphy.gif',
+'https://media.giphy.com/media/QNQgqJ403Vcoo/giphy.gif',
+'https://media.giphy.com/media/zMQcrvqjkC9d6/giphy.gif',
+'https://media.giphy.com/media/EaSH6bwyEQVkA/giphy.gif',
+'https://media.giphy.com/media/EGQ7qLdbWHOLK/giphy.gif',
+'https://media.giphy.com/media/Cf76sVcqiN1tu/giphy.gif',
+'https://media.giphy.com/media/dwRyANr9buXtK/giphy.gif',
+'https://media.giphy.com/media/VG2RUZNTHYvAs/giphy.gif',
+'https://media.giphy.com/media/50ikYkrYPNBqU/giphy.gif',
+'https://media.giphy.com/media/gMDKyrWInxOhO/giphy.gif',
+'https://media.giphy.com/media/12za05Ybz2YfcY/giphy.gif',
+'https://media.giphy.com/media/pVtxNScpYHaY8/giphy.gif',
+'https://media.giphy.com/media/p2s1qCQ60n4qs/giphy.gif',
+'https://media.giphy.com/media/VEn6uMTmWunRu/giphy.gif',
+'https://media.giphy.com/media/He70JJxAUGp8Y/giphy.gif',
+'https://media.giphy.com/media/37qcnlmtHzZoAFsiFA/giphy.gif',
+'https://media.giphy.com/media/sJaZBVqhPnQk0/giphy.gif',
+'https://media.giphy.com/media/8NunvDAvEeWXu/giphy.gif',
+'https://media.giphy.com/media/nbMyya8CQ25dPMXeYn/giphy.gif',
+'https://media.giphy.com/media/l3nWl5bhBoim7glNu/giphy.gif',
+'https://media.giphy.com/media/3dhBaH8VO2JRsIlvoR/giphy.gif']
+
+function changeGif(url) {
+    document.getElementById("cry").src = url;
+  }
